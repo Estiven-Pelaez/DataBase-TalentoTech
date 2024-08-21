@@ -1,0 +1,17 @@
+{
+  "name": "nodeone",
+  "version": "1.0.0",
+  "description": "A node project to teach how to use express with mongo",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon src/app.js"
+  },
+  "author": "Stiven Pelaez",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.3",
+    "nodemon": "^3.1.4"
+  }
+}
