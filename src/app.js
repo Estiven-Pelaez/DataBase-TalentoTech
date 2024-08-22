@@ -20,6 +20,9 @@ app.get('/', function(req, response){
 app.use(express.urlencoded({extended:false}));
 
 // configurar rutas
+app.get("/", function (req, res) {
+    res.send("Hello from vercel");
+  });
 app.use('/products', productRoutes)
 app.use('/sales', salesRoutes)
 
