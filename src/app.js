@@ -1,10 +1,14 @@
 const express = require('express');
 const mongoose = require('mongoose')
 const app = express()
+const cors = require('cors')
+
+app.use(cors());
 // Importar rutas
 const productRoutes = require("./routes/products.routes");
 const salesRoutes = require('./routes/sale.routes')
 require('dotenv').config();
+
 
 // conectarnos mongoose
 mongoose
